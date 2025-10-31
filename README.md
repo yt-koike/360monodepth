@@ -39,7 +39,7 @@ docker run -it --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 360monodepth sh -c "
 
 Or you can run with Docker Compose.
 ```
-docker compose run --rm 360monodepth
+docker compose run --rm --build 360monodepth
 cd /monodepth/code/python/src
 python3 main.py --expname test_experiment --blending_method all --grid_size 8x7
 ```
